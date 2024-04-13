@@ -44,9 +44,6 @@ jobs:
           restore: true # will run restore on download
           cache: true #will cache dependencies
 
-          publish: true
-          publish_token: ${{secrets.QPM_TOKEN}}
-
           version: ${{ steps.get_tag_version.outputs.VERSION }}
           tag: ${{ steps.get_tag_version.outputs.TAG }}
 
